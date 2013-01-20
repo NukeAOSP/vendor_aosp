@@ -65,9 +65,7 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     SuperSU \
     Torch \
-    XYPapers \
-    XYSettings \
-    XYStats
+    NukeSettings \
 
 # SuperSU and sysrw
 PRODUCT_COPY_FILES += \
