@@ -58,7 +58,7 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf
 
-# Xylon Packages
+# Nuke Packages
 PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
     SnapBlack \
