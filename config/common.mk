@@ -55,16 +55,14 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf
 
-# Xylon Packages
+# Nuke Packages
 PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
     SnapBlack \
     SoundRecorder \
     SuperSU \
     Torch \
-    XYPapers \
-    XYSettings \
-    XYStats
+    NukeSettings \
 
 # SuperSU and sysrw
 PRODUCT_COPY_FILES += \
