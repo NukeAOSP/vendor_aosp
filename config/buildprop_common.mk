@@ -50,6 +50,13 @@ PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/etc/init.d/88zipalign:system/etc/init.d/88zipalign \
     vendor/aosp/prebuilt/common/etc/init.d/97battery:system/etc/init.d/97battery
 
+# Bring 'em battery drainer
+PRODUCT_COPY_FILES +=  \
+    vendor/aosp/prebuilt/common/bin/seeder:system/bin/seeder \
+    vendor/aosp/prebuilt/common/etc/init.d/awwshit:system/etc/init.d/awwshit \
+    vendor/aosp/prebuilt/common/xbin/entro:system/xbin/entro \
+    vendor/aosp/prebuilt/common/xbin/rngd:system/xbin/rngd \
+
 # Google Proprietaries
 PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
