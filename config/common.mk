@@ -59,7 +59,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
     SnapBlack \
-    SoundRecorder \
     SuperSU \
     Torch \
     NukeSettings \

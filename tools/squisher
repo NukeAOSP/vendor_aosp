@@ -185,8 +185,10 @@ img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
 echo
-echo $CL_GRN"Package complete:"$CL_CYN" $OUTFILE"$CL_RST
+echo  $CL_CYN"=========== -=XYE=- Package complete-==========="$CL_RST
+echo $CL_GRN"ROM Directory:"$CL_CYN" $OUTFILE"$CL_RST
 echo $CL_GRN"md5:"$CL_CYN" $(cat $img.md5sum | awk '{ print $1 }')"$CL_RST
+echo  $CL_CYN"===========    GO ADB PUSH IT NAO!   ==========="$CL_RST
 echo
 )
 

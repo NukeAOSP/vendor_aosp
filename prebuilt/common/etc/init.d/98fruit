@@ -1,0 +1,20 @@
+#!/system/bin/sh
+# PrimeDirective, Sonicxml, DHO, Nuclearmistake
+# With inspiration from DroidTh3ory
+
+sync
+sysrw
+
+# Enable Sysctl Tweaks
+sysctl -p /system/etc/sysctl.conf
+
+# Set SD Card Cache
+if [ -e /sys/devices/virtual/bdi/179:0/read_ahead_kb ]; then
+echo "2048" > /sys/devices/virtual/bdi/179:0/read_ahead_kb
+fi
+
+# Breaking the lease
+echo "15" > /proc/sys/fs/lease-break-time
+
+sync
+sysro

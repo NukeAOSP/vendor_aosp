@@ -2,7 +2,6 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=280 \
-    net.bt.name=Android \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heapgrowthlimit=96m \
     dalvik.vm.heapsize=256m \
@@ -16,7 +15,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     debug.performance.tuning=1 \
     video.accelerate.hw=1 \
-    pm.sleep_mode=1 \
     ro.HOME_APP_ADJ=1 \
     ro.media.dec.jpeg.memcap=8000000 \
     ro.media.enc.hprof.vid.bps=8000000 \
@@ -24,15 +22,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.media.enc.jpeg.quality=100 \
     debug.composition.type=gpu \
     ro.telephony.call_ring.delay=500 \
-    ro.max.fling_velocity=12000 \
-    ro.min.fling_velocity=8000 \
     ro.lge.proximity.delay=25 \
-    mot.proximity.delay=25 \
-    net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960 \
-    net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960 \
-    net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960 \
-    net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960 \
-    net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+    mot.proximity.delay=25
 
 # Misc Files & init.d files
 PRODUCT_COPY_FILES +=  \
@@ -43,19 +34,21 @@ PRODUCT_COPY_FILES +=  \
 
 # 01010101010101010010101010
 PRODUCT_COPY_FILES +=  \
-    vendor/aosp/prebuilt/common/bin/set_sysctl:system/bin/set_sysctl \
     vendor/aosp/prebuilt/common/bin/zipalign:system/bin/zipalign \
     vendor/aosp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/aosp/prebuilt/common/etc/init.d/00fnvxy:system/etc/init.d/00fnvxy \
+    vendor/aosp/prebuilt/common/etc/init.d/01cherrybomb:system/etc/init.d/01cherrybomb \
     vendor/aosp/prebuilt/common/etc/init.d/02cleaning:system/etc/init.d/02cleaning \
+    vendor/aosp/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
     vendor/aosp/prebuilt/common/etc/init.d/88zipalign:system/etc/init.d/88zipalign \
-    vendor/aosp/prebuilt/common/etc/init.d/97battery:system/etc/init.d/97battery
+    vendor/aosp/prebuilt/common/etc/init.d/98fruit:system/etc/init.d/98fruit
 
 # Bring 'em battery drainer
 PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/bin/seeder:system/bin/seeder \
-    vendor/aosp/prebuilt/common/etc/init.d/awwshit:system/etc/init.d/awwshit \
+    vendor/aosp/prebuilt/common/etc/init.d/99rngd:system/etc/init.d/99rngd \
     vendor/aosp/prebuilt/common/xbin/entro:system/xbin/entro \
-    vendor/aosp/prebuilt/common/xbin/rngd:system/xbin/rngd \
+    vendor/aosp/prebuilt/common/xbin/rngd:system/xbin/rngd
 
 # Google Proprietaries
 PRODUCT_COPY_FILES +=  \
